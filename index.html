@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREENMIND</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <script src="src/js/emerge.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="shortcut icon" href="src/images/logo.svg" type="image/x-icon" />
+    <script src="src/js/pop-up.js" defer></script>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          necessitatibus vero aliquam dolorum quos sapiente eligendi ipsam natus
+          vitae iste ea, numquam quisquam quo aut voluptate ut veritatis velit,
+          culpa beatae. Ipsa itaque ipsam ratione impedit earum sapiente quod,
+          quos repellat tempora voluptate quae ea distinctio repudiandae ab
+          aliquid neque!
+        </p>
+        <button class="modal__close">&#215;</button>
+      </div>
+    </div>
+    <section class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="index.html" class="logo">
+            <img class="logo__img" src="src/images/logo.svg" alt="Логотип" />
+          </a>
+          <div class="header__nav-menu">
+            <button class="header__burger-btn" id="burger">
+              <span></span><span></span><span></span>
+            </button>
+
+            <div class="profile__cart__container">
+              <a href="profile.html"
+                ><img src="src/images/Person.svg" alt="profile"
+              /></a>
+              <a href="cart.html"
+                ><img src="src/images/Cart.svg" alt="cart"
+              /></a>
+            </div>
+            <div class="vl"></div>
+          </div>
+
+          <nav class="menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contact.html">Contact</a>
+              </li>
+              <li class="menu__item item_spec">
+                <a href="profile.html"
+                  ><img src="src/images/Person.svg" alt="profile"
+                /></a>
+              </li>
+              <li class="menu__item item_spec">
+                <a href="cart.html"
+                  ><img src="src/images/Cart.svg" alt="cart"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="blur"></div>
+      </header>
+      <main>
+        <section class="hero-container emerge">
+          <div class="hero element-animation">
+            <div class="hero-text">
+              <h1>
+                Buy your <br />
+                dream plants
+              </h1>
+              <div class="desc_text">
+                <div class="desc_text_1">
+                  <p>
+                    <span> 50+ </span> <br />
+                    Plant Species
+                  </p>
+                </div>
+                <div class="vl"></div>
+                <div class="desc_text_1">
+                  <p>
+                    <span>100+ </span> <br />
+                    Customers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="search_field" onsubmit="return false;">
+              <input type="search" placeholder="What are you looking for?" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </section>
+        <section class="best-container">
+          <div class="best">
+            <div class="best-desc element-animation">
+              <h1>Best Selling Plants</h1>
+              <p>Easiest way to healthy life by buying your favorite plants</p>
+              <button class="pop-up__button">see more</button>
+            </div>
+            <div class="best-items">
+              <div class="best-item element-animation">
+                <img src="src/images/best_1.png" alt="Natural Plants" />
+                <h3>Natural Plants</h3>
+                <p>$ 20.00</p>
+              </div>
+              <div class="best-item element-animation">
+                <img src="src/images/best_2.png" alt="Artificial Plants" />
+                <h3>Artificial Plants</h3>
+                <p>$ 20.00</p>
+              </div>
+              <div class="best-item element-animation">
+                <img src="src/images/best_3.png" alt="Artificial Plants" />
+                <h3>Artificial Plants</h3>
+                <p>$ 20.00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-us-container">
+          <div class="about-us">
+            <div class="about-us-desc element-animation">
+              <h1>About Us</h1>
+              <p>Order now and appreciate the beauty of nature</p>
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="about-1 element-animation">
+              <img src="src/images/about-1.png" alt="About Us" />
+              <h1>Large Assortment</h1>
+              <p>
+                we offer many different types of products with fewer variations
+                in each category.
+              </p>
+            </div>
+            <div class="about-2 element-animation">
+              <img src="src/images/about-2.png" alt="About Us" />
+              <h1>Fast & Free Shipping</h1>
+              <p>
+                4-day or less delivery time, free shipping and an expedited
+                delivery option.
+              </p>
+            </div>
+            <div class="about-3 element-animation">
+              <img src="src/images/about-3.png" alt="About Us" />
+              <h1>24/7 Support</h1>
+              <p>
+                answers to any business related inquiry 24/7 and in real-time.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="categories-container">
+          <div class="hover-effect-btn element-animation">
+            <img src="src/images/Frame 36.png" alt="" />
+            <h3 class="title">Natural Plants</h3>
+            <div class="overlay"></div>
+            <button>Explore</button>
+          </div>
+          <div class="hover-effect-btn element-animation">
+            <img src="src/images/Frame 38.png" alt="" />
+            <h3 class="title">Plant Accessories</h3>
+            <div class="overlay"></div>
+            <button>Explore</button>
+          </div>
+          <div class="hover-effect-btn element-animation">
+            <img src="src/images/Frame 37.png" alt="" />
+            <h3 class="title">Artificial Plants</h3>
+            <div class="overlay"></div>
+            <button>Explore</button>
+          </div>
+        </section>
+        <h1 class="slider-tittle">What customers say about GREEMIND?</h1>
+        <div class="slider-wrapper element-animation">
+          <div class="slider">
+            <div class="slide">
+              <div class="slide-container">
+                <p>
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+                <div class="slide-img">
+                  <img src="src/images/reveiew-1.png" alt="" />
+                  <img src="src/images/raiting-1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-container">
+                <p>
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+                <div class="slide-img">
+                  <img src="src/images/reveiew-1.png" alt="" />
+                  <img src="src/images/raiting-1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-container">
+                <p>
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+                <div class="slide-img">
+                  <img src="src/images/reveiew-1.png" alt="" />
+                  <img src="src/images/raiting-1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="info">
+            <div class="info-links">
+              <p>Information</p>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+            <div class="info-links">
+              <p>Company</p>
+              <ul>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="story.html">Our story</a></li>
+              </ul>
+            </div>
+            <div class="info-links">
+              <p>Contact</p>
+              <ul>
+                <li><a href="login.html">Getting Started</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="resourses.html">Resources</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="reserved">2023 all Right Reserved Term of use GREENMIND</p>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(".slider").slick({
+        slidesToShow: 1.5,
+        infinite: false,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
