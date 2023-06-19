@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__content">
+        <p class="text"></p>
+        <button class="modal__close">close</button>
+      </div>
+    </div>
+    <div class="search">
+      <form class="search_field" onsubmit="findonpage(); return false; ">
+        <input
+          type="text"
+          value=""
+          id="user_text"
+          placeholder="Search"
+          autofocus
+        />
+        <button type="submit" value=" " id="submit_btn" title="Начать поиск">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <div class="wrapper">
+      <div class="list_container">
+        <div class="description">
+          <h1>My music player project</h1>
+          <p>created using jamengo.com api for personale use and portfolio</p>
+        </div>
+        <div class="playlist">
+          <div class="playlist__desc">
+            <p>#</p>
+            <p class="desc__album">album</p>
+            <p class="desc__time">time</p>
+          </div>
+          <span></span>
+        </div>
+        <ul></ul>
+      </div>
+      <div class="player">
+        <div class="track_info">
+          <img class="track_img__desc" src="" alt="" />
+          <div class="track_disc">
+            <div class="track-name"></div>
+            <div class="track-artist"></div>
+          </div>
+        </div>
+
+        <div class="slider_container player__navigation">
+          <div class="buttons">
+            <button
+              class="random-track"
+              onclick="randomTrack()"
+              disabled="true"
+            >
+              <i class="fas fa-random fa-2x" title="random"></i>
+            </button>
+            <button class="prev-track" onclick="prevTrack()" disabled="true">
+              <i class="fa fa-step-backward fa-2x"></i>
+            </button>
+            <button
+              class="playpause-track"
+              onclick="playpauseTrack()"
+              disabled="true"
+            >
+              <i class="fa fa-play fa-2x"></i>
+            </button>
+            <button class="next-track" onclick="nextTrack()" disabled="true">
+              <i class="fa fa-step-forward fa-2x"></i>
+            </button>
+            <button
+              class="repeat-track"
+              onclick="repeatTrack()"
+              disabled="true"
+            >
+              <i class="fa fa-repeat fa-2x" title="repeat"></i>
+            </button>
+          </div>
+          <div class="time__box">
+            <div class="current-time" style="width: 60px">00:00</div>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="0"
+              class="seek_slider slider-progress time_slider"
+              onchange="seekTo()"
+              oninput="progresSeek()"
+            />
+            <div
+              class="total-duration"
+              style="width: 60px; display: flex; justify-content: flex-end"
+            >
+              00:00
+            </div>
+          </div>
+        </div>
+
+        <div class="slider_container volume_slider__box">
+          <i class="fa fa-volume-up"></i>
+          <input
+            id="volume"
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            class="volume_slider seek_slider slider-progress"
+            oninput="setVolume()"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
